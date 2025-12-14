@@ -1,0 +1,13 @@
+def todo_game():
+    tasks = []
+    while True:
+        choice = input("1.Add 2.view 3.exit")
+        if choice == "1":
+            task = input("Enter task:")
+            tasks.append(task)
+        elif choice == "2":
+            for i, t in enumerate(tasks, 1): # enumerate(tasks, 0) it starts from 0 for index
+                print(i, t)
+        elif choice == "3":
+            break
+todo_game()
